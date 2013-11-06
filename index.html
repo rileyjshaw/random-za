@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pizza Randomizer</title>
+</head>
+<body>
+  
+  <h1>Yucky messy testing</h1>
+  
+  <script>
+    (function() {
+      $.ajax({
+        dataType: "json",
+        url: "https://order.pizzapizza.ca/PhoenixWEB/order/ajax.php?processid=80&productCode=S",
+        data: {},
+        success: function(data) {
+          console.log("success");
+          return console.log(data);
+        }
+      });
+    
+    }).call(this);
+  </script>
+</body>
+</html>
